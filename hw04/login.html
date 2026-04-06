@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>夏令營登入</title>
+        <meta charset="utf-8">
+        <script>
+            function checkLogin() {
+                var acc = document.getElementById("acc").value;
+                var pwd = document.getElementById("pwd").value;
+
+                if (acc == "admin" && pwd == "1234") {
+                    window.location.href = "form.html"; 
+                } else {
+                    alert("登入失敗，請重新輸入！");
+                }
+            }
+        </script>
+    </head>
+    <body bgcolor="#fdf5e6">
+        <center>
+            <br>
+            <h1>❃❃ 2026高大迎新夏令營報名 ❃❃</h1>
+            <h3>請先登入</h3>
+            <p>帳號：<input type="text" id="acc"></p>
+            <p>密碼：<input type="password" id="pwd"></p>
+            <button onclick="checkLogin()">登入</button>
+        </center>
+    </body>
+</html>
